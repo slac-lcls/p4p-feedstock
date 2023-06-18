@@ -10,7 +10,7 @@ source:
   sha256: 024115fdd82f233034a7b972599af4d1e988fba33e0f0f2d65efc569780c9a14
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -20,7 +20,7 @@ requirements:
   host:
     - python
     - cython
-    - epicscorelibs =7.0.4.99
+    - epicscorelibs
     - numpy
     - pip
     - ply
@@ -30,7 +30,7 @@ requirements:
   run:
     - python
     - cython
-    - epicscorelibs =7.0.4.99
+    - epicscorelibs
     - nose >=1.1.2
     - {{ pin_compatible('numpy') }}
     - ply
